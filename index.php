@@ -1,8 +1,6 @@
 
 <h1>
-<?php
-echo "My first app";
-?>
+<?= "Erika ♥"; ?>
 </h1>
 
 <style>
