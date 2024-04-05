@@ -1,6 +1,15 @@
+<?php
+    $name = "Ruth";
+    $isDev = true;
+    $age = (bool) 21;
+
+    var_dump($name);
+    $output = "Erika ♥ " . "<br />" . "17/10/13" . "<br />" . $age . "<br />" . $isDev;
+?>
+
 
 <h1>
-<?= "Erika ♥"; ?>
+<?= $output; ?>
 </h1>
 
 <style>
