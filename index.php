@@ -1,20 +1,26 @@
 <?php
-    $name = "Ruth";
-    $isDev = true;
-    $age = 21;
+$name = "Ruth";
+$isDev = true;
+$age = 21;
 
-    $output = "Erika ♥ " . "<br />" . "17/10/13" . "<br />" . $age . "<br />" . $isDev;
+$output = "Erika ♥ " . "<br />" . "17/10/13" . "<br />" . $age . "<br />" . $isDev;
 
-    $bestLanguajes = ["PHP", "JavaScript", "Python", "Java", "C#", 1, 2];
-    $bestLanguajes[] = "C++";
-    $bestLanguajes[4] = "Ruby";
+
+
+$bestLanguajes = ["PHP", "JavaScript", "Python", "Java", "C#"];
+$bestLanguajes[] = "C++";
+$bestLanguajes[4] = "Ruby";
 
 ?>
 
-<h3>El mejor lenguaje es <?= $bestLanguajes[4] ?></h3>
+<ul>
+    <?php foreach ($bestLanguajes as $key => $languaje) : ?>
+        <li><?= $key . " - " . $languaje ?></li>
+    <?php endforeach; ?>
+</ul>
 
 <h1>
-<?= $output ?>
+    <?= $output ?>
 </h1>
 
 <style>
