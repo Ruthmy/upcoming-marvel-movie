@@ -7,10 +7,15 @@
 
     var_dump($name);
     $output = "Erika ♥ " . "<br />" . "17/10/13" . "<br />" . $age . "<br />" . $isDev;
+
+    $outputAge = $isOld
+    ? "Eres viejo. Lo siento"
+    : "Eres joven. ¡Felicidades!";
+
 ?>
 
 <h1>
-<?= $output; ?>
+<?= $output .= "<br>" . $outputAge; ?>
 </h1>
 
 <?php if ($isOld) : ?>
