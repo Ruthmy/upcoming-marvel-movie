@@ -3,24 +3,18 @@
     $isDev = true;
     $age = 21;
 
-    var_dump($name);
     $output = "Erika ♥ " . "<br />" . "17/10/13" . "<br />" . $age . "<br />" . $isDev;
 
-    $result = match (true) {
-        $age >= 65 => 'senior',
-        $age >= 25 => 'adult',
-        $age >= 18 => 'young adult',
-        default => 'kid',
-    };
-    
-    var_dump($result);
+    $bestLanguajes = ["PHP", "JavaScript", "Python", "Java", "C#", 1, 2];
+    $bestLanguajes[] = "C++";
+    $bestLanguajes[4] = "Ruby";
 
 ?>
 
-
+<h3>El mejor lenguaje es <?= $bestLanguajes[4] ?></h3>
 
 <h1>
-<?= $output; ?>
+<?= $output ?>
 </h1>
 
 <style>
